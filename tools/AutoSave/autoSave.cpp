@@ -29,7 +29,7 @@ class EditorUI_Timer : public EditorUI {
                     timer->showStatusTime();
                 
                 if (time <= 0) {
-                    timer->showStatus("Autosaving...");
+                    timer->showStatus("Autosaving, please wait :)");
                     timer->getLabel()->draw();
 
                     auto pauseLayer = EditorPauseLayer::create(this->m_pEditorLayer);
